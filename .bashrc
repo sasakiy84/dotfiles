@@ -136,10 +136,14 @@ if [ -f "$HOME/.cargo/env" ]; then
     . "$HOME/.cargo/env"
 fi
 
-if [ -f "$HOME/.asdf/asdf.sh" ]; then
-    . $HOME/.asdf/asdf.sh
-fi
+
 
 export GPG_TTY=$(tty)
 export AWS_VAULT_BACKEND=pass
 alias dotconf='/usr/bin/git --git-dir=/home/since/.cfg/ --work-tree=/home/since'
+
+eval "$(starship init bash)"
+
+if [ -f "$HOME/.asdf/asdf.sh" ]; then
+    . $HOME/.asdf/asdf.sh
+fi
