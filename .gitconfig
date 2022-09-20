@@ -1,0 +1,14 @@
+[user]
+	name = sasakiy84
+	email = sasakiy84@g.ecc.u-tokyo.ac.jp
+[core]
+	editor = vim
+[pull]
+	rebase = true
+[rebase]
+	autostash = true
+	autosquash = true
+[init]
+	defaultBranch = main
+[push]
+	default = current

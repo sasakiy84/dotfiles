@@ -1,0 +1,2 @@
+# support .node-version, etc
+legacy_version_file = yes
