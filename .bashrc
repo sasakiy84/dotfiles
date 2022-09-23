@@ -140,7 +140,7 @@ fi
 
 export GPG_TTY=$(tty)
 export AWS_VAULT_BACKEND=pass
-alias dotconf='/usr/bin/git --git-dir=/home/since/.cfg/ --work-tree=/home/since'
+alias dotconf="/usr/bin/git --git-dir=${HOME}/.dotfiles.git/ --work-tree=${HOME}"
 
 eval "$(starship init bash)"
 
