@@ -147,3 +147,13 @@ eval "$(starship init bash)"
 if [ -f "$HOME/.asdf/asdf.sh" ]; then
     . $HOME/.asdf/asdf.sh
 fi
+
+#
+# Bat
+#
+if command -v bat > /dev/null
+then
+    export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
