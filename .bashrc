@@ -135,25 +135,12 @@ fi
 if [ -f "$HOME/.cargo/env" ]; then
     . "$HOME/.cargo/env"
 fi
-
-
-
-export GPG_TTY=$(tty)
-export AWS_VAULT_BACKEND=pass
 alias dotconf="/usr/bin/git --git-dir=${HOME}/.dotfiles.git/ --work-tree=${HOME}"
 
-eval "$(starship init bash)"
-
-if [ -f "$HOME/.asdf/asdf.sh" ]; then
-    . $HOME/.asdf/asdf.sh
+# load plugins init
+if [ -d ~/.bash_profiles ]; then
+	for f in ~/.bash_profiles/.*.bash;
+	do
+		[ -f $f ] && source $f;
+	done
 fi
-
-#
-# Bat
-#
-if command -v bat > /dev/null
-then
-    export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-fi
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
