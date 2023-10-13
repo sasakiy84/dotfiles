@@ -10,3 +10,14 @@ registries:
 - type: standard
   ref: v4.64.0 # renovate: depName=aquaproj/aqua-registry
 packages:
+- name: BurntSushi/ripgrep@13.0.0
+- name: junegunn/fzf@0.42.0
+- name: sharkdp/bat@v0.24.0
+- name: ogham/exa@v0.10.1
+- name: sharkdp/hyperfine@v1.18.0
+- name: wader/fq@v0.8.0
+- name: jqlang/jq@jq-1.7
+- name: sharkdp/hexyl@v0.13.1
+- name: lsd-rs/lsd@v1.0.0
+- name: sharkdp/fd@v8.7.0
+- name: starship/starship@v1.16.0

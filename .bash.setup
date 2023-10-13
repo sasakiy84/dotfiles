@@ -1,0 +1,9 @@
+eval "$(starship init bash)"
+
+if [ -f $HOME/.config/fzf/completion.bash ]; then
+	source $HOME/.config/fzf/completion.bash
+fi
+
+if [ -f $HOME/.config/fzf/key-bindings.bash ]; then
+	source $HOME/.config/fzf/key-bindings.bash
+fi

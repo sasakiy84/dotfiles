@@ -103,3 +103,7 @@ if [ -f ${HOME}/.bash.export ]; then
         . ~/.bash.export
 fi
 
+if [ -f ${HOME}/.bash.setup ]; then
+        . ~/.bash.setup
+fi
+
