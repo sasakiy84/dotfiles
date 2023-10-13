@@ -21,7 +21,7 @@ config config status.showUntrackedFiles no
 
 その後、以下を実行
 ```bash
-$ bash setup_shell.sh
+$ chmod +x setup_shell.sh && ./setup_shell.sh
 $ exec $SHELL -l
 ```
 
