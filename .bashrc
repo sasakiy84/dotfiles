@@ -99,3 +99,7 @@ fi
 #fi
 alias config='/usr/bin/git --git-dir=/root/.cfg/ --work-tree=/root'
 
+if [ -f ${HOME}/.bash.export ]; then
+        . ~/.bash.export
+fi
+
