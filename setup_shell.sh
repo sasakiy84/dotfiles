@@ -27,4 +27,3 @@ echo "c2af02bdd15da6794f9c98db40332c804224930212f553a805425441f8331665  aqua-ins
 chmod +x aqua-installer
 ./aqua-installer
 export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
-aqua i --all --only-link
