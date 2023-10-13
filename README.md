@@ -22,6 +22,7 @@ config config status.showUntrackedFiles no
 その後、以下を実行
 ```bash
 $ chmod +x setup_shell.sh && ./setup_shell.sh
+$ aqua i --all --only-link
 $ exec $SHELL -l
 ```
 
