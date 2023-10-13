@@ -1,4 +1,4 @@
-eval "$(starship init bash)"
+eval "$(which starship && starship init bash)"
 
 if [ -f $HOME/.config/fzf/completion.bash ]; then
 	source $HOME/.config/fzf/completion.bash
