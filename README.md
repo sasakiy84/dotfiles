@@ -17,8 +17,12 @@ if [ $? = 0 ]; then
 fi;
 config checkout
 config config status.showUntrackedFiles no
-bash setup_shell.sh
-exec $SHELL -l
+```
+
+その後、以下を実行
+```bash
+$ bash setup_shell.sh
+$ exec $SHELL -l
 ```
 
 ## aquaによるパッケージの追加
