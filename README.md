@@ -45,5 +45,22 @@ $ config push
 ## TODOs
 - [ ] aquaを利用してバージョンアップに追従する
 
+# WSLで新しい環境を作る
+windowsユーザーの場合、WSLを利用して新しい環境を気軽に作成できる。以下、ubuntuの例で説明する。
+適当な場所に`wsl`フォルダを作成し、コマンドライン上でそのなかに入る。
+また、[ここ](https://cloud-images.ubuntu.com/wsl/)から、ubuntuのファイルをダウンロードして`wsl`フォルダのなかに入れておく。22.04は、`ubuntu-jammy-wsl-amd64-wsl.rootfs.tar.gz`というファイル。
+
+その後、以下のようなコマンドを実行すれば環境が作成される。
+```
+wsl --import ubuntu22.04-test ./ubuntu22.04-test ./ubuntu-jammy-wsl-amd64-wsl.rootfs.tar.gz
+```
+
+`wsl -l -v`で作成された環境を確認できる。また、`wsl -d ubuntu22.04-test`でログインできる。
+
+削除方法は以下の通り
+```
+wsl --unregister ubuntu22.04-test
+```
+
 # 参考
 - [How to Store Dotfiles - A Bare Git Repository | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/dotfiles)
