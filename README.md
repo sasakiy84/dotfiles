@@ -1,7 +1,8 @@
 # dotfiles
 ## セットアップ
-以下のコマンドを`temp.sh`として保存し、`bash temp.sh`を実行する
+以下のコマンドをプロンプトに張り付けて実行する
 ```bash
+cat << "EOF" | bash
 #!/bin/bash
 git clone --bare https://github.com/sasakiy84/dotfiles.git $HOME/.cfg
 function config {
@@ -17,6 +18,8 @@ if [ $? = 0 ]; then
 fi;
 config checkout
 config config status.showUntrackedFiles no
+
+EOF
 ```
 
 その後、以下を実行
