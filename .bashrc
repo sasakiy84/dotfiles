@@ -107,3 +107,6 @@ if [ -f ${HOME}/.bash.setup ]; then
         . ~/.bash.setup
 fi
 
+if [ -f ${HOME}/.bash.local ]; then
+        . ~/.bash.local
+fi
