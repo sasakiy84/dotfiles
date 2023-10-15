@@ -21,3 +21,4 @@ packages:
 - name: lsd-rs/lsd@v1.0.0
 - name: sharkdp/fd@v8.7.0
 - name: starship/starship@v1.16.0
+- name: cli/cli@v2.36.0
