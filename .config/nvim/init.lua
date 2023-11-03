@@ -29,6 +29,7 @@ local on_attach = function(client, _bufnr)
    set('n', 'gx', '<cmd>lua vim.lsp.diagnostic.show()<CR>')
    set('n', 'g[', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>')
    set('n', 'g]', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>')
+	 set('n', 'go', '<cmd>lua vim.lsp.buf.document_symbol()<CR>')
    set('n', 'gf', function()
       vim.lsp.buf.format { async = true }
    end, opts)
