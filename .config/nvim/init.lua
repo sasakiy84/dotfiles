@@ -83,6 +83,9 @@ require('lspsaga').setup({})
 -- setup color schema
 vim.cmd[[
 let g:everforest_better_performance = 1
+let g:everforest_disable_italic_comment = 1
+let g:everforest_transparent_background = 1
+let g:everforest = 1
 colorscheme everforest
 ]]
 
