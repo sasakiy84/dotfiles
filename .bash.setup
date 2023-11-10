@@ -7,3 +7,8 @@ fi
 if [ -f $HOME/.config/fzf/key-bindings.bash ]; then
 	source $HOME/.config/fzf/key-bindings.bash
 fi
+
+if [ -f $HOME/.config/z/z.sh ]; then
+	. $HOME/.config/z/z.sh
+fi
+
