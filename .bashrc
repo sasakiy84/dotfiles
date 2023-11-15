@@ -110,4 +110,3 @@ fi
 if [ -f ${HOME}/.bash.local ]; then
         . ~/.bash.local
 fi
-. "$HOME/.cargo/env"
