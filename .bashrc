@@ -97,7 +97,7 @@ fi
 #if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 #    . /etc/bash_completion
 #fi
-alias config='/usr/bin/git --git-dir==${HOME}/.cfg/ --work-tree==$HOME'
+alias config='/usr/bin/git --git-dir=${HOME}/.cfg/ --work-tree=$HOME'
 
 if [ -f ${HOME}/.bash.export ]; then
         . ~/.bash.export
@@ -110,3 +110,4 @@ fi
 if [ -f ${HOME}/.bash.local ]; then
         . ~/.bash.local
 fi
+
